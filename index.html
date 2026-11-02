@@ -2,67 +2,157 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#07111f"><meta name="description" content="شهر تعاملی شبکه‌های ارتباطی؛ از دستگاه کاربر تا فیبر، مراکز داده، شبکه موبایل و ماهواره.">
-<title>مخابرات | شهر زنده ارتباطات</title>
+<meta name="theme-color" content="#102d36">
+<title>Telecommunications City | شهر مخابرات</title>
 <style>
-:root{--bg:#07111f;--panel:#101e31;--line:#24415e;--cyan:#42d9ff;--green:#57e3ae;--amber:#ffc76b;--muted:#9cb3c9;--text:#edf7ff}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#173b59 0,#07111f 55%);color:var(--text);font-family:Tahoma,Arial,sans-serif}
-header{padding:18px 22px 12px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;border-bottom:1px solid #203951;background:#081525e8;position:sticky;top:0;z-index:5;backdrop-filter:blur(12px)}
-h1{font-size:clamp(20px,3vw,30px);margin:0;color:#fff}h1 span{color:var(--cyan)}.sub{color:var(--muted);font-size:12px;margin-top:6px}
-.actions{display:flex;gap:8px;flex-wrap:wrap}button{background:#132b42;color:var(--text);border:1px solid #315573;border-radius:10px;padding:9px 13px;font:inherit;cursor:pointer}button:hover,button.active{border-color:var(--cyan);background:#12384e}button.primary{background:#087b9a;border-color:#32c9ed}
-main{max-width:1500px;margin:auto;padding:16px;display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:14px}.stage{min-width:0}.citybox,.card{background:linear-gradient(145deg,#10243a,#0b1728);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 14px 40px #0005}.stagehead{display:flex;justify-content:space-between;align-items:center;padding:12px 15px;border-bottom:1px solid var(--line);gap:8px;flex-wrap:wrap}.stagehead strong{font-size:14px}.legend{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:11px}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-left:5px}
-#city{display:block;width:100%;height:auto;aspect-ratio:1100/650;background:#091827;touch-action:manipulation}.hint{padding:9px 14px;color:var(--muted);font-size:11px;border-top:1px solid var(--line)}
-aside{display:flex;flex-direction:column;gap:12px}.card{padding:14px}.card h2{font-size:15px;margin:0 0 12px;color:var(--cyan)}.status{display:grid;grid-template-columns:1fr 1fr;gap:8px}.metric{background:#0a1727;border:1px solid #203b55;border-radius:11px;padding:10px}.metric small{color:var(--muted);display:block;font-size:10px}.metric b{font-size:19px;color:#fff;display:block;margin-top:4px}.meter{height:6px;background:#20364c;border-radius:8px;margin-top:8px;overflow:hidden}.meter i{display:block;height:100%;background:linear-gradient(90deg,#22b6d9,#57e3ae);width:var(--v)}
-.detailTitle{display:flex;justify-content:space-between;align-items:center;gap:8px}.badge{font-size:10px;color:var(--green);border:1px solid #28664f;padding:4px 7px;border-radius:20px}.detail p{font-size:12px;line-height:1.9;color:#c2d4e4;margin:8px 0}.detail ul{padding-right:18px;margin:8px 0;color:#b7cadd;font-size:11px;line-height:2}
-.flow{display:flex;align-items:center;gap:5px;flex-wrap:wrap;font-size:10px;color:#c5d8e9}.flow span{border:1px solid #31516c;background:#0b1b2c;border-radius:7px;padding:6px}.flow em{color:var(--cyan);font-style:normal}
-.nodes{display:grid;gap:6px}.nodebtn{text-align:right;font-size:11px;padding:9px}.nodebtn small{color:var(--muted);display:block;margin-top:4px}
-footer{max-width:1500px;margin:0 auto;padding:0 16px 22px;color:#7f9bb4;font-size:10px;line-height:1.9}
-@media(max-width:950px){main{grid-template-columns:1fr}aside{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.detail{grid-column:1/-1}}
-@media(max-width:560px){main{padding:9px}aside{grid-template-columns:1fr}.detail{grid-column:auto}header{padding:13px}.stagehead{padding:10px}button{padding:8px 10px;font-size:11px}}
+:root{--ink:#17313a;--muted:#668087;--panel:#fffdf4;--teal:#16a6a0;--gold:#efb94f;--blue:#3b9fd1;--green:#5eaa68}
+*{box-sizing:border-box}body{margin:0;background:#d9e8dc;color:var(--ink);font-family:Tahoma,Arial,sans-serif}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:13px 20px;background:#163a43;color:white;box-shadow:0 4px 16px #183b3b33}
+h1{font-size:clamp(19px,3vw,27px);margin:0}h1 span{color:#ffd477}.subtitle{font-size:11px;color:#c2d8d3;margin-top:5px}
+.controls{display:flex;gap:7px;flex-wrap:wrap}button{font:inherit;cursor:pointer;border:1px solid #b7c9bd;border-radius:10px;padding:9px 12px;background:#fffdf3;color:#24434a;font-size:12px}button:hover,button.active{background:#dff7ee;border-color:#159f95}button.primary{background:#f7c65f;border-color:#f7c65f;font-weight:bold}
+main{max-width:1500px;margin:auto;padding:14px;display:grid;grid-template-columns:minmax(0,1fr) 315px;gap:13px}
+.scene-wrap{background:#f7f1d9;border:1px solid #b8cbb6;border-radius:18px;overflow:hidden;box-shadow:0 12px 30px #234a3820}
+.scene-top{padding:11px 15px;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;background:#fffdf2;border-bottom:1px solid #d5dfc9}.scene-top strong{font-size:14px}.key{font-size:10px;color:#627c73;display:flex;gap:12px;flex-wrap:wrap}.key i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-left:4px}
+#city{width:100%;height:auto;display:block;background:#b9dcae;touch-action:manipulation}
+svg .hot{cursor:pointer;transition:filter .2s,opacity .2s}svg .hot:hover{filter:brightness(1.14) drop-shadow(0 0 5px #fff)}svg .hot.selected{filter:drop-shadow(0 0 7px #fff) drop-shadow(0 0 5px #16a6a0)}svg text{font-family:Tahoma,Arial,sans-serif;pointer-events:none} .packet{filter:drop-shadow(0 0 5px #fff)}
+aside{display:flex;flex-direction:column;gap:11px}.panel{background:var(--panel);border:1px solid #c8d8c7;border-radius:16px;padding:13px;box-shadow:0 8px 20px #244b3812}.panel h2{font-size:14px;color:#287e78;margin:0 0 10px}.stats{display:grid;grid-template-columns:1fr 1fr;gap:7px}.stat{background:#edf4e9;border-radius:10px;padding:9px}.stat small{font-size:10px;color:#70847a;display:block}.stat b{font-size:19px;display:block;margin-top:4px;color:#23454a}.stat em{font-size:10px;color:#24977c;font-style:normal}.bar{height:5px;background:#d4e3d6;border-radius:9px;margin-top:7px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,#4aa9bb,#68b878);width:var(--w)}
+#infoTitle{font-size:16px;color:#24555a;margin:0 0 7px}.info p{font-size:11px;line-height:1.9;color:#5c7374;margin:6px 0}.info ul{padding-right:18px;margin:8px 0 0;color:#536c6c;font-size:10px;line-height:2}
+.route{display:flex;align-items:center;gap:4px;flex-wrap:wrap;margin-top:10px}.route span{font-size:9px;background:#e6f0e8;border:1px solid #c9ddce;border-radius:6px;padding:5px}.route b{font-size:10px;color:#279d9a}
+.buildings{display:grid;grid-template-columns:1fr 1fr;gap:6px}.buildings button{text-align:right;padding:8px;font-size:10px}.buildings button small{display:block;color:#799087;font-size:9px;margin-top:3px}
+.caption{padding:9px 14px;background:#fffdf2;border-top:1px solid #d5dfc9;color:#70837a;font-size:10px;line-height:1.8}
+footer{max-width:1500px;margin:auto;padding:0 15px 18px;font-size:10px;color:#61776e;line-height:1.9}
+@media(max-width:980px){main{grid-template-columns:1fr}aside{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.info{grid-column:1/-1}}
+@media(max-width:560px){main{padding:7px}header{padding:11px}.scene-top{padding:9px}.key{gap:7px}aside{grid-template-columns:1fr}.info{grid-column:auto}.buildings button{font-size:11px}}
 </style>
 </head>
 <body>
-<header><div><h1>مخابرات <span> / شهر زنده ارتباطات</span></h1><div class="sub">شبیه‌سازی آموزشیِ مسیر داده از دستگاه تا شبکه جهانی — نمای استراتژیک تعاملی</div></div><div class="actions"><button id="play" class="primary">⏸ توقف جریان</button><button id="packets">نمایش بسته‌ها: روشن</button><button id="reset">بازنشانی</button></div></header>
-<main><section class="stage"><div class="citybox"><div class="stagehead"><strong>نقشه عملیاتی شبکه</strong><div class="legend"><span><i class="dot" style="background:#42d9ff"></i>فیبر نوری</span><span><i class="dot" style="background:#57e3ae"></i>رادیویی</span><span><i class="dot" style="background:#ffc76b"></i>ماهواره</span></div></div><canvas id="city" width="1100" height="650" aria-label="نقشه تعاملی شهر ارتباطات"></canvas><div class="hint">برای انتخاب هر سازه روی آن بزنید؛ دکمه‌های کناری نیز اجزای شبکه را انتخاب می‌کنند. مسیرهای نورانی، جریان نمونه بسته‌های داده را نشان می‌دهند.</div></div></section>
-<aside><section class="card"><h2>وضعیت شبیه‌سازی</h2><div class="status"><div class="metric"><small>بسته‌های عبوری</small><b id="count">1,284</b><div class="meter"><i style="--v:72%"></i></div></div><div class="metric"><small>تأخیر نمونه</small><b id="latency">24 ms</b><div class="meter"><i style="--v:34%"></i></div></div><div class="metric"><small>ظرفیت لینک نمونه</small><b>10 Gb/s</b><div class="meter"><i style="--v:68%"></i></div></div><div class="metric"><small>وضعیت مسیر</small><b style="color:var(--green);font-size:15px">فعال</b><div class="meter"><i style="--v:96%"></i></div></div></div></section>
-<section class="card detail"><div class="detailTitle"><h2 id="dtitle">مرکز داده</h2><span class="badge">گره انتخاب‌شده</span></div><p id="desc">ساختمان مرکز داده، میزبان سرورها و سامانه‌های ذخیره‌سازی است. روترهای مرزی ترافیک را به شبکه اپراتور و اینترنت مبادله می‌کنند.</p><div class="flow" id="flow"><span>کاربر</span><em>←</em><span>دسترسی</span><em>←</em><span>هسته شبکه</span><em>←</em><span>مرکز داده</span></div><ul id="facts"><li>سوئیچ‌ها و روترهای لایه ۲ و ۳</li><li>سرورها، ذخیره‌سازی و مجازی‌سازی</li><li>UPS، ژنراتور، سرمایش و اطفای حریق</li></ul></section>
-<section class="card"><h2>انتخاب سریع اجزا</h2><div class="nodes" id="nodes"></div></section></aside></main>
-<footer>این محیط یک مدل آموزشی و تعاملی است؛ اعداد ترافیک، تأخیر و ظرفیت در آن نمایشی‌اند و از اپراتور یا تجهیزات واقعی دریافت نمی‌شوند. معماری واقعی بسته به کشور، اپراتور، فناوری دسترسی و توپولوژی شبکه متفاوت است. در ارتباط موبایل، مسیر معمول شامل گوشی ↔ ایستگاه پایه رادیویی ↔ شبکه انتقال ↔ هسته موبایل ↔ دروازه اینترنت است؛ ماهواره فقط یکی از مسیرهای ممکن دسترسی یا بک‌هاول است و در همه تماس‌ها/اتصالات حضور ندارد.</footer>
+<header><div><h1>🏙️ <span>Telecommunications City</span> | شهر مخابرات</h1><div class="subtitle">یک شهر مینیاتوری تعاملی؛ ببین داده‌ها چطور در شهر حرکت می‌کنند</div></div><div class="controls"><button id="toggle" class="primary">⏸ توقف شهر</button><button id="traffic">بسته‌های داده: روشن</button><button id="reset">↻ شروع دوباره</button></div></header>
+<main>
+<section class="scene-wrap"><div class="scene-top"><strong>نقشه سه‌بعدی شهر ارتباطات</strong><div class="key"><span><i style="background:#16b7dc"></i>فیبر</span><span><i style="background:#58c78b"></i>رادیویی</span><span><i style="background:#f3b84c"></i>ماهواره</span><span><i style="background:#fff"></i>بسته داده</span></div></div>
+<svg id="city" viewBox="0 0 1100 700" role="img" aria-label="ماکت ایزومتریک شهر مخابرات با ساختمان‌ها و مسیرهای داده">
+<defs>
+ <linearGradient id="grass" x2="0" y2="1"><stop stop-color="#c9e6a8"/><stop offset="1" stop-color="#8fc78e"/></linearGradient>
+ <linearGradient id="glass" x2="1" y2="1"><stop stop-color="#b9eff0"/><stop offset=".5" stop-color="#4f9fb5"/><stop offset="1" stop-color="#23657b"/></linearGradient>
+ <linearGradient id="road" x2="0" y2="1"><stop stop-color="#788d8b"/><stop offset="1" stop-color="#526b6b"/></linearGradient>
+ <filter id="shadow"><feGaussianBlur stdDeviation="5"/></filter>
+ <pattern id="windows" width="20" height="22" patternUnits="userSpaceOnUse"><rect x="4" y="4" width="10" height="12" rx="2" fill="#bdebf0" opacity=".8"/></pattern>
+</defs>
+<!-- island and park -->
+<path d="M0 0H1100V700H0Z" fill="url(#grass)"/>
+<path d="M0 120L250 0H430L0 260ZM760 0H1100V150L900 245ZM0 540L260 420 420 700H0Z" fill="#a5d28e" opacity=".65"/>
+<g fill="#6ab27a" opacity=".7"><circle cx="70" cy="65" r="32"/><circle cx="180" cy="65" r="22"/><circle cx="1020" cy="65" r="30"/><circle cx="1000" cy="610" r="45"/><circle cx="90" cy="620" r="36"/><circle cx="270" cy="620" r="24"/></g>
+<!-- roads -->
+<path d="M-40 470L410 220 1160 590M-50 220L500 520 1140 180" fill="none" stroke="#d9d4b5" stroke-width="92"/>
+<path d="M-40 470L410 220 1160 590M-50 220L500 520 1140 180" fill="none" stroke="url(#road)" stroke-width="76"/>
+<g stroke="#e9e5c8" stroke-width="3" stroke-dasharray="18 17" fill="none"><path d="M-40 470L410 220 1160 590M-50 220L500 520 1140 180"/></g>
+<!-- river -->
+<path d="M0 335Q210 250 390 320T760 330T1100 245" fill="none" stroke="#74c9d2" stroke-width="35" opacity=".85"/>
+<path d="M0 335Q210 250 390 320T760 330T1100 245" fill="none" stroke="#b6edf0" stroke-width="3" stroke-dasharray="12 18"/>
+<!-- parks/trees -->
+<g id="trees" fill="#438d55" stroke="#34734a" stroke-width="2">
+<g transform="translate(65 115)"><path d="M0 20v32" stroke="#805f3c" stroke-width="7"/><circle cy="5" r="22"/><circle cx="-12" cy="15" r="14"/><circle cx="13" cy="16" r="14"/></g>
+<g transform="translate(970 320)"><path d="M0 20v32" stroke="#805f3c" stroke-width="7"/><circle cy="5" r="22"/><circle cx="-12" cy="15" r="14"/><circle cx="13" cy="16" r="14"/></g>
+<g transform="translate(820 590)"><path d="M0 20v32" stroke="#805f3c" stroke-width="7"/><circle cy="5" r="22"/><circle cx="-12" cy="15" r="14"/><circle cx="13" cy="16" r="14"/></g>
+<g transform="translate(230 350)"><path d="M0 20v32" stroke="#805f3c" stroke-width="7"/><circle cy="5" r="22"/><circle cx="-12" cy="15" r="14"/><circle cx="13" cy="16" r="14"/></g>
+</g>
+<!-- fibre trunk below the roads -->
+<path d="M130 520L350 390L560 500L770 380L960 500" fill="none" stroke="#087fa4" stroke-width="12" opacity=".65"/>
+<path d="M130 520L350 390L560 500L770 380L960 500" fill="none" stroke="#65e6ed" stroke-width="4" stroke-dasharray="8 9"/>
+<!-- user homes -->
+<g class="hot" data-id="users">
+<ellipse cx="130" cy="535" rx="94" ry="22" fill="#527e5b" opacity=".3"/>
+<path d="M55 475L115 438 176 475V535H55Z" fill="#f5e7bd" stroke="#9a815d" stroke-width="3"/><path d="M45 476L115 430 186 476 115 494Z" fill="#bd6954" stroke="#945346" stroke-width="3"/>
+<rect x="72" y="490" width="22" height="30" fill="#5d9db0"/><rect x="125" y="490" width="30" height="24" fill="#82c6cf"/>
+<path d="M180 495L220 472 260 495V540H180Z" fill="#f3dba7" stroke="#9a815d" stroke-width="3"/><path d="M173 495L220 463 267 495 220 508Z" fill="#4e8290"/><rect x="197" y="505" width="18" height="30" fill="#7fc5ce"/>
+<rect x="85" y="548" width="22" height="15" rx="3" fill="#223c49"/><rect x="91" y="551" width="10" height="8" fill="#a4e7ee"/><path d="M96 548q-16 -16 -27 0M96 548q16 -16 27 0" fill="none" stroke="#fff" stroke-width="2"/>
+<text x="143" y="585" text-anchor="middle" font-size="18" font-weight="bold" fill="#20434a">خانه‌های کاربران</text><text x="143" y="602" text-anchor="middle" font-size="11" fill="#315b5a">گوشی • لپ‌تاپ • Wi-Fi</text>
+</g>
+<!-- cell tower -->
+<g class="hot" data-id="tower">
+<ellipse cx="355" cy="395" rx="58" ry="16" fill="#527e5b" opacity=".3"/>
+<path d="M350 230L321 390H389L360 230Z" fill="#a9c1bc" stroke="#5c7d79" stroke-width="3"/><path d="M355 245L332 385M355 245L379 385M338 340H373M331 375H381" fill="none" stroke="#668b86" stroke-width="3"/>
+<path d="M330 245L380 245M334 290L376 290M328 340L382 340" stroke="#688b86" stroke-width="5"/>
+<g fill="#eaf5e7" stroke="#527b7a" stroke-width="2"><rect x="315" y="215" width="13" height="42" rx="4" transform="rotate(-12 315 215)"/><rect x="380" y="215" width="13" height="42" rx="4" transform="rotate(12 380 215)"/><rect x="348" y="195" width="14" height="47" rx="4"/></g>
+<path d="M355 193V168M347 175L355 163 363 175" fill="none" stroke="#536d6d" stroke-width="3"/>
+<text x="355" y="423" text-anchor="middle" font-size="17" font-weight="bold" fill="#20434a">دکل 5G / 4G</text><text x="355" y="440" text-anchor="middle" font-size="11" fill="#315b5a">آنتن و ایستگاه پایه</text>
+</g>
+<!-- exchange building -->
+<g class="hot" data-id="core">
+<ellipse cx="590" cy="490" rx="105" ry="23" fill="#527e5b" opacity=".3"/>
+<path d="M500 395L590 345 680 395V480L590 530 500 480Z" fill="#d3e2d6" stroke="#567e7d" stroke-width="3"/>
+<path d="M500 395L590 445 680 395 590 345Z" fill="#eaf3dd" stroke="#567e7d" stroke-width="3"/>
+<path d="M590 445V530" stroke="#688b86" stroke-width="3"/>
+<path d="M515 405L590 448 665 405M515 430L590 472 665 430M515 455L590 497 665 455" fill="none" stroke="#8cb4b0" stroke-width="3"/>
+<g fill="#2b697d"><rect x="535" y="416" width="30" height="12" rx="2"/><rect x="575" y="440" width="30" height="12" rx="2"/><rect x="615" y="416" width="30" height="12" rx="2"/><rect x="535" y="450" width="30" height="12" rx="2"/><rect x="615" y="450" width="30" height="12" rx="2"/></g>
+<text x="590" y="558" text-anchor="middle" font-size="17" font-weight="bold" fill="#20434a">مرکز سوئیچ و هسته</text><text x="590" y="575" text-anchor="middle" font-size="11" fill="#315b5a">روتر • EPC / 5GC</text>
+</g>
+<!-- datacenter -->
+<g class="hot" data-id="dc">
+<ellipse cx="850" cy="510" rx="110" ry="23" fill="#527e5b" opacity=".3"/>
+<path d="M755 290L850 238 945 290V460L850 515 755 460Z" fill="#286c80" stroke="#1d5367" stroke-width="4"/>
+<path d="M755 290L850 340 945 290 850 238Z" fill="#b8e3d9" stroke="#367b86" stroke-width="3"/>
+<path d="M850 340V515M755 290L850 340 945 290" fill="none" stroke="#b0d9d5" stroke-width="3"/>
+<path d="M770 310L835 345V480L770 445ZM865 345L930 310V445L865 480Z" fill="url(#windows)" opacity=".9"/>
+<g fill="#e7f1dc"><rect x="782" y="365" width="24" height="82" rx="3"/><rect x="814" y="383" width="24" height="82" rx="3"/><rect x="875" y="383" width="24" height="82" rx="3"/><rect x="906" y="365" width="24" height="82" rx="3"/></g>
+<g fill="#34798a"><path d="M786 375h16v7h-16zm0 15h16v7h-16zm0 15h16v7h-16zm32 0h16v7h-16zm0 15h16v7h-16zm58 0h16v7h-16zm0 15h16v7h-16zm32-45h16v7h-16zm0 15h16v7h-16z"/></g>
+<text x="850" y="544" text-anchor="middle" font-size="18" font-weight="bold" fill="#20434a">مرکز داده / ابر</text><text x="850" y="562" text-anchor="middle" font-size="11" fill="#315b5a">سرورها • ذخیره‌سازی</text>
+</g>
+<!-- IXP -->
+<g class="hot" data-id="ixp">
+<ellipse cx="710" cy="215" rx="74" ry="17" fill="#527e5b" opacity=".25"/>
+<path d="M650 155L710 122 770 155V210L710 244 650 210Z" fill="#e7d9a9" stroke="#9e8b58" stroke-width="3"/><path d="M650 155L710 188 770 155 710 122Z" fill="#fff0c4" stroke="#9e8b58" stroke-width="3"/>
+<path d="M710 188V244M665 165L710 190 755 165" stroke="#ad9b67" stroke-width="3"/>
+<g fill="#6d91a0"><rect x="674" y="170" width="22" height="10" rx="2"/><rect x="723" y="170" width="22" height="10" rx="2"/><rect x="699" y="202" width="22" height="10" rx="2"/></g>
+<text x="710" y="270" text-anchor="middle" font-size="17" font-weight="bold" fill="#20434a">IXP</text><text x="710" y="286" text-anchor="middle" font-size="11" fill="#315b5a">تبادل ترافیک اینترنت</text>
+</g>
+<!-- satellite station -->
+<g class="hot" data-id="sat">
+<ellipse cx="1000" cy="145" rx="60" ry="15" fill="#527e5b" opacity=".25"/>
+<path d="M985 135L1010 135 1020 198H975Z" fill="#9bada3" stroke="#587a75" stroke-width="3"/><path d="M970 133Q1000 85 1030 133Q1000 154 970 133Z" fill="#e7edf0" stroke="#6d8b8d" stroke-width="3"/><path d="M1000 126V78M989 88L1000 76 1011 88" fill="none" stroke="#5e7778" stroke-width="3"/>
+<path d="M1000 76L1000 38" stroke="#d39e3b" stroke-width="2" stroke-dasharray="4 5"/>
+<g transform="translate(1000 35)"><rect x="-13" y="-8" width="26" height="16" rx="4" fill="#e9f1eb" stroke="#687f80" stroke-width="2"/><path d="M-13 -4H-38V4H-13M13 -4H38V4H13" fill="#55a8bc" stroke="#477d89" stroke-width="2"/></g>
+<text x="1000" y="225" text-anchor="middle" font-size="16" font-weight="bold" fill="#20434a">ایستگاه ماهواره‌ای</text><text x="1000" y="241" text-anchor="middle" font-size="11" fill="#315b5a">لینک پشتیبان / مناطق دوردست</text>
+</g>
+<!-- little vehicles and street furniture -->
+<g><path d="M430 570l30 -16 26 15 -30 17Z" fill="#f2c15e" stroke="#8d7548" stroke-width="2"/><circle cx="443" cy="585" r="5" fill="#344b4b"/><circle cx="472" cy="568" r="5" fill="#344b4b"/><path d="M270 175l20 -12 20 12 -20 12Z" fill="#f6f0d4"/><path d="M290 187v22" stroke="#7c8c77" stroke-width="4"/></g>
+<!-- glowing communication links -->
+<g fill="none" stroke-linecap="round"><path d="M160 510L355 390L590 490L850 480" stroke="#16a6a0" stroke-width="5" opacity=".9"/><path d="M355 390L710 210L850 480" stroke="#f0b54c" stroke-width="3" stroke-dasharray="8 9" opacity=".9"/><path d="M590 490L710 210L1000 140" stroke="#3b9fd1" stroke-width="3" stroke-dasharray="5 10" opacity=".9"/></g>
+<g id="packets"></g>
+</svg>
+<div class="caption">روی ساختمان‌ها، دکل یا ایستگاه ماهواره‌ای بزن تا اطلاعات فنی آن بخش را ببینی. نقطه‌های نورانی، حرکت نمونه بسته‌های داده را در مسیر شبکه نمایش می‌دهند.</div></section>
+<aside>
+<section class="panel"><h2>📡 تابلوی شهر در حال کار</h2><div class="stats">
+<div class="stat"><small>بسته‌های جابه‌جا شده</small><b id="count">1,284</b><em>● در حال عبور</em><div class="bar"><i style="--w:76%"></i></div></div>
+<div class="stat"><small>تأخیر نمونه</small><b id="latency">24 ms</b><em>● مسیر پاسخ</em><div class="bar"><i style="--w:32%"></i></div></div>
+<div class="stat"><small>ظرفیت لینک نمونه</small><b>10 Gb/s</b><em>● فیبر شهری</em><div class="bar"><i style="--w:68%"></i></div></div>
+<div class="stat"><small>سلامت شبکه</small><b style="color:#299b71">98%</b><em>● همه مسیرها فعال</em><div class="bar"><i style="--w:98%"></i></div></div>
+</div></section>
+<section class="panel info"><h2>🔎 جزئیات ساختمان انتخاب‌شده</h2><h3 id="infoTitle">مرکز داده / ابر</h3><p id="description">سرورها و ذخیره‌سازها سرویس‌های اینترنتی را اجرا می‌کنند. روترهای مرزی مرکز داده را به شبکه‌های دیگر متصل می‌کنند.</p><div class="route" id="route"><span>کاربر</span><b>←</b><span>دکل</span><b>←</b><span>هسته</span><b>←</b><span>مرکز داده</span></div><ul id="facts"><li>سرورهای محاسباتی و ذخیره‌سازی</li><li>روتر مرزی و اتصال به IXP</li><li>برق پشتیبان و سرمایش</li></ul></section>
+<section class="panel"><h2>🧭 انتخاب سریع مناطق شهر</h2><div class="buildings" id="quick"></div></section>
+</aside>
+</main>
+<footer>این شهر یک شبیه‌سازی آموزشی است؛ شمارنده بسته، تأخیر و ظرفیت به‌صورت نمایشی تولید می‌شوند و داده زنده اپراتور نیستند. در شبکه واقعی، مسیر و فناوری انتقال با توجه به اپراتور، منطقه و نوع سرویس تغییر می‌کند.</footer>
 <script>
-const canvas=document.getElementById('city'),ctx=canvas.getContext('2d');
-const defs=[
-{id:'user',name:'گوشی و لپ‌تاپ',x:105,y:500,w:130,h:88,color:'#55d9ff',desc:'دستگاه کاربر، داده را از طریق Wi‑Fi، اترنت یا رادیوی موبایل ارسال و دریافت می‌کند. مودم یا کارت شبکه، داده را به فریم و سیگنال قابل انتقال تبدیل می‌کند.',facts:['Wi‑Fi: ارتباط محلی با نقطه دسترسی','اترنت: اتصال سیمی به روتر یا سوئیچ','TCP/QUIC و TLS در لایه‌های بالاتر، بسته به سرویس']},
-{id:'tower',name:'دکل و سایت رادیویی موبایل',x:330,y:280,w:120,h:190,color:'#57e3ae',desc:'آنتن‌های سکتوری امواج رادیویی را با گوشی مبادله می‌کنند. تجهیزات رادیویی سیگنال را پردازش کرده و از طریق فیبر یا لینک مایکروویو به شبکه انتقال می‌فرستند.',facts:['آنتن سکتوری، RRU/RRH و واحد باند پایه','باند فرکانسی و توان تابع مجوز و طراحی شبکه','اتصال بک‌هاول معمولاً فیبر یا مایکروویو است']},
-{id:'fiber',name:'شبکه فیبر نوری',x:525,y:495,w:170,h:65,color:'#42d9ff',desc:'فیبر، داده را با پالس‌های نور منتقل می‌کند. در مسیر شهری، کابل‌ها از کانال و حوضچه عبور می‌کنند و در مراکز مخابراتی به تجهیزات انتقال نوری می‌رسند.',facts:['OLT/ONT در شبکه‌های دسترسی PON','DWDM می‌تواند چند طول موج را روی یک فیبر حمل کند','تقویت‌کننده‌ها و ترمینال‌های نوری در مسیرهای بلند']},
-{id:'exchange',name:'مرکز سوئیچ و هسته موبایل',x:720,y:310,w:150,h:115,color:'#55c7ff',desc:'روترها و سوئیچ‌های هسته، مسیر بسته‌ها را میان شبکه‌ها تعیین می‌کنند. هسته موبایل نشست مشترک، تحرک، احراز هویت و سیاست دسترسی را مدیریت می‌کند.',facts:['روترهای IP/MPLS و تجهیزات انتقال','در 4G: EPC؛ در 5G: 5GC','DNS، DHCP، فایروال و سامانه‌های کنترل']},
-{id:'dc',name:'مرکز داده و ابر',x:900,y:460,w:150,h:115,color:'#ffc76b',desc:'سرورها، ذخیره‌سازها و تجهیزات شبکه، وب‌سایت‌ها و سرویس‌های ابری را اجرا می‌کنند. مراکز داده با برق پشتیبان، سرمایش و مسیرهای ارتباطی افزونه طراحی می‌شوند.',facts:['سرورهای محاسباتی، ذخیره‌سازی و مجازی‌سازی','روتر مرزی و اتصال به نقاط تبادل اینترنت (IXP)','UPS، ژنراتور، سرمایش و مسیرهای افزونه']},
-{id:'sat',name:'ماهواره و ایستگاه زمینی',x:770,y:100,w:150,h:90,color:'#ffc76b',desc:'ترمینال زمینی سیگنال را به ماهواره می‌فرستد و ماهواره آن را به دروازه زمینی دیگری بازتاب یا مسیریابی می‌کند. این مسیر برای مناطق دورافتاده و ارتباط پشتیبان کاربرد دارد.',facts:['آنتن بشقابی و مودم ماهواره‌ای','باندهای فرکانسی و باران‌کاهی در طراحی مهم‌اند','تأخیر به مدار و مسیر رفت‌وبرگشت وابسته است']},
-{id:'ixp',name:'نقطه تبادل اینترنت (IXP)',x:540,y:250,w:130,h:90,color:'#9aafff',desc:'شبکه‌های مستقل (AS) در IXP ترافیک را با یکدیگر مبادله می‌کنند. BGP مسیرهای بین‌دامنه‌ای را اعلام می‌کند؛ IXP خودِ اینترنت نیست، یکی از نقاط اتصال شبکه‌هاست.',facts:['روترهای peering و سوئیچ fabric','BGP برای تبادل مسیر میان سامانه‌های خودمختار','محتوا ممکن است از CDN نزدیک کاربر تحویل شود']}
-];
-let selected='dc',running=true,showPackets=true,t=0,packetCount=1284;
-const by=id=>defs.find(d=>d.id===id);
-function polygon(points,fill,stroke='#25455e'){ctx.beginPath();points.forEach((p,i)=>i?ctx.lineTo(...p):ctx.moveTo(...p));ctx.closePath();ctx.fillStyle=fill;ctx.fill();ctx.strokeStyle=stroke;ctx.lineWidth=2;ctx.stroke()}
-function line(a,b,color,width=5){ctx.beginPath();ctx.moveTo(...a);ctx.lineTo(...b);ctx.strokeStyle=color;ctx.lineWidth=width;ctx.lineCap='round';ctx.stroke()}
-function text(s,x,y,size=16,color='#eaf6ff',align='center'){ctx.font='bold '+size+'px Tahoma';ctx.textAlign=align;ctx.fillStyle=color;ctx.fillText(s,x,y)}
-function drawBuilding(x,y,w,h,label,accent){polygon([[x,y+h*.28],[x+w*.25,y],[x+w,y+h*.28],[x+w*.75,y+h*.48]],'#173550',accent);polygon([[x,y+h*.28],[x+w*.75,y+h*.48],[x+w*.75,y+h],[x,y+h*.78]],'#10273c',accent);polygon([[x+w*.75,y+h*.48],[x+w,y+h*.28],[x+w,y+h*.78],[x+w*.75,y+h]],'#0a1d30',accent);for(let k=0;k<3;k++){line([x+14,y+35+k*20],[x+w*.65,y+55+k*20],'#2c7290',2)}text(label,x+w*.5,y+h+22,13)}
-function drawTower(x,y){line([x+60,y+5],[x+60,y+180],'#a6c6d8',5);line([x+25,y+50],[x+95,y+50],'#a6c6d8',3);line([x+35,y+95],[x+85,y+95],'#a6c6d8',3);for(let i=0;i<4;i++){line([x+60,y+15+i*42],[x+25+i*4,y+50+i*35],'#5b91ac',2);line([x+60,y+15+i*42],[x+95-i*4,y+50+i*35],'#5b91ac',2)}polygon([[x+45,y+180],[x+75,y+180],[x+90,y+195],[x+30,y+195]],'#24445c');text('سایت رادیویی',x+60,y+220,13)}
-function draw(){let g=ctx.createLinearGradient(0,0,0,650);g.addColorStop(0,'#0b2034');g.addColorStop(1,'#071321');ctx.fillStyle=g;ctx.fillRect(0,0,1100,650);
-for(let i=0;i<14;i++){ctx.strokeStyle='#16334a';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(i*90,0);ctx.lineTo(i*90,650);ctx.stroke()}for(let i=0;i<9;i++){ctx.beginPath();ctx.moveTo(0,i*80);ctx.lineTo(1100,i*80);ctx.stroke()}
-polygon([[0,590],[1100,590],[1100,650],[0,650]],'#0b2636');text('شهر • مسیرهای دسترسی و انتقال',550,625,13,'#7698b4');
-const paths=[[[170,510],[390,360],[600,510],[785,365],[970,505]],[[390,360],[605,285],[785,365]],[[785,365],[840,145],[970,505]]];
-paths.forEach((p,i)=>{ctx.beginPath();p.forEach((q,j)=>j?ctx.lineTo(...q):ctx.moveTo(...q));ctx.strokeStyle=['#287b9a','#2a9d83','#b38b46'][i];ctx.lineWidth= i===2?3:6;ctx.setLineDash(i===2?[8,9]:[]);ctx.stroke();ctx.setLineDash([])});
-drawBuilding(75,475,145,85,'کاربر','#42d9ff');drawTower(330,260);drawBuilding(500,465,185,70,'فیبر و انتقال','#42d9ff');drawBuilding(710,290,150,120,'هسته شبکه','#55c7ff');drawBuilding(890,440,165,110,'مرکز داده','#ffc76b');
-ctx.beginPath();ctx.arc(830,115,25,0,Math.PI*2);ctx.fillStyle='#d4e8f5';ctx.fill();ctx.strokeStyle='#ffc76b';ctx.lineWidth=3;ctx.stroke();line([800,115],[860,115],'#ffc76b',3);text('ماهواره',830,72,13,'#ffc76b');
-drawBuilding(510,220,120,60,'IXP / تبادل','#9aafff');
-for(const d of defs){let active=d.id===selected;ctx.strokeStyle=active?'#fff':'#42637b';ctx.lineWidth=active?3:1;ctx.setLineDash(active?[7,5]:[]);ctx.strokeRect(d.x-8,d.y-8,d.w+16,d.h+16);ctx.setLineDash([]);if(active){ctx.fillStyle='#42d9ff18';ctx.fillRect(d.x-8,d.y-8,d.w+16,d.h+16)}}
-if(showPackets){const segs=[[[170,510],[390,360]],[[390,360],[600,510]],[[600,510],[785,365]],[[785,365],[970,505]]];for(let k=0;k<12;k++){let z=(t*.004+k/12)%1,idx=Math.min(3,Math.floor(z*4)),u=z*4-idx,a=segs[idx][0],b=segs[idx][1];ctx.beginPath();ctx.arc(a[0]+(b[0]-a[0])*u,a[1]+(b[1]-a[1])*u,4,0,7);ctx.fillStyle=k%3?'#42d9ff':'#fff';ctx.shadowColor='#42d9ff';ctx.shadowBlur=12;ctx.fill();ctx.shadowBlur=0}}
-}
-function select(id){selected=id;const d=by(id);document.getElementById('dtitle').textContent=d.name;document.getElementById('desc').textContent=d.desc;document.getElementById('facts').innerHTML=d.facts.map(x=>'<li>'+x+'</li>').join('');const flows={user:['گوشی/لپ‌تاپ','Wi‑Fi یا 5G','روتر دسترسی','اینترنت'],tower:['گوشی','آنتن و رادیو','بک‌هاول','هسته موبایل'],fiber:['سایت/مرکز','فیبر نوری','تجهیزات انتقال','هسته شبکه'],exchange:['دسترسی','روترهای IP','BGP / peering','شبکه مقصد'],dc:['شبکه اینترنت','روتر مرزی','فایروال و سوئیچ','سرور / سرویس'],sat:['ترمینال زمینی','لینک uplink','ماهواره','دروازه زمینی'],ixp:['شبکه AS-A','روتر peering','IXP fabric','شبکه AS-B']};document.getElementById('flow').innerHTML=flows[id].map((x,i)=>'<span>'+x+'</span>'+(i<3?'<em>←</em>':'')).join('');document.querySelectorAll('.nodebtn').forEach(b=>b.classList.toggle('active',b.dataset.id===id));draw()}
-document.getElementById('nodes').innerHTML=defs.map(d=>'<button class="nodebtn" data-id="'+d.id+'">'+d.name+'<small>نمایش جزئیات و نقش در مسیر</small></button>').join('');
-document.getElementById('nodes').addEventListener('click',e=>{let b=e.target.closest('button[data-id]');if(b)select(b.dataset.id)});
-canvas.addEventListener('click',e=>{const r=canvas.getBoundingClientRect(),x=(e.clientX-r.left)*1100/r.width,y=(e.clientY-r.top)*650/r.height;let id=defs.find(d=>x>=d.x-12&&x<=d.x+d.w+12&&y>=d.y-12&&y<=d.y+d.h+12)?.id;if(id)select(id)});
-document.getElementById('play').onclick=()=>{running=!running;document.getElementById('play').textContent=running?'⏸ توقف جریان':'▶ ادامه جریان'};
-document.getElementById('packets').onclick=()=>{showPackets=!showPackets;document.getElementById('packets').textContent='نمایش بسته‌ها: '+(showPackets?'روشن':'خاموش');draw()};
-document.getElementById('reset').onclick=()=>{t=0;packetCount=1284;select('dc');document.getElementById('count').textContent='1,284'};
-function loop(){if(running){t+=1;packetCount+=Math.floor(Math.random()*3);if(t%45===0){document.getElementById('count').textContent=packetCount.toLocaleString('en-US');document.getElementById('latency').textContent=(18+Math.floor(Math.random()*15))+' ms'}draw()}requestAnimationFrame(loop)}select('dc');loop();
-</script></body></html>
+const info={
+users:{title:'خانه‌های کاربران و دستگاه‌ها',desc:'گوشی، لپ‌تاپ و دستگاه‌های هوشمند نقطه شروع یا پایان ارتباط هستند. داده از طریق Wi-Fi، اترنت یا شبکه رادیویی موبایل وارد شبکه می‌شود.',facts:['Wi-Fi برای اتصال محلی بی‌سیم','اترنت برای اتصال سیمی','مودم یا کارت شبکه، سیگنال را ارسال و دریافت می‌کند'],route:['گوشی / لپ‌تاپ','Wi-Fi یا 5G','روتر دسترسی','اینترنت']},
+tower:{title:'دکل و ایستگاه پایه 4G / 5G',desc:'آنتن‌های سکتوری با گوشی‌ها ارتباط رادیویی برقرار می‌کنند. تجهیزات سایت، داده را پردازش و از راه فیبر یا مایکروویو به شبکه انتقال می‌فرستند.',facts:['آنتن سکتوری و واحد رادیویی','واحد پردازش باند پایه','اتصال بک‌هاول فیبر یا مایکروویو'],route:['گوشی','آنتن رادیویی','بک‌هاول','هسته موبایل']},
+core:{title:'مرکز سوئیچ و هسته موبایل',desc:'هسته شبکه نشست کاربر، تحرک، احراز هویت و مسیریابی را مدیریت می‌کند. روترها بسته‌ها را به مقصد مناسب می‌فرستند.',facts:['در 4G معماری EPC و در 5G هسته 5GC','روترهای IP و تجهیزات انتقال','کنترل دسترسی و مدیریت نشست'],route:['سایت رادیویی','شبکه انتقال','هسته موبایل','شبکه مقصد']},
+dc:{title:'مرکز داده و رایانش ابری',desc:'ساختمان سرورها، ذخیره‌سازها و تجهیزات شبکه است. وب‌سایت‌ها، برنامه‌ها و سرویس‌های ابری در اینجا یا زیرساخت‌های مشابه اجرا می‌شوند.',facts:['سرورهای پردازشی و ذخیره‌سازی','روتر مرزی و اتصال به شبکه‌ها','برق پشتیبان، سرمایش و مسیر افزونه'],route:['کاربر','دکل','هسته شبکه','مرکز داده']},
+ixp:{title:'نقطه تبادل اینترنت (IXP)',desc:'شبکه‌های مستقل در این نقطه ترافیک را مستقیم با هم مبادله می‌کنند. پروتکل BGP مسیرهای بین شبکه‌ها را اعلام می‌کند.',facts:['سوئیچ مرکزی و روترهای peering','تبادل مسیر با BGP','کاهش مسیرهای غیرضروری در تبادل محلی'],route:['شبکه A','روتر مرزی','IXP','شبکه B']},
+sat:{title:'ایستگاه زمینی و ماهواره',desc:'آنتن زمینی سیگنال را به ماهواره می‌فرستد و ماهواره آن را به دروازه زمینی دیگر منتقل می‌کند. این فناوری می‌تواند دسترسی مناطق دوردست یا مسیر پشتیبان را فراهم کند.',facts:['آنتن بشقابی و مودم ماهواره‌ای','تأخیر به مدار و مسیر رفت‌وبرگشت وابسته است','یکی از گزینه‌های دسترسی یا بک‌هاول'],route:['ترمینال زمینی','uplink','ماهواره','دروازه زمینی']}
+};
+let selected='dc',running=true,traffic=true,tick=0,packets=1284;
+const svg=document.getElementById('city'),packetLayer=document.getElementById('packets');
+function select(id){if(!info[id])return;selected=id;let d=info[id];document.getElementById('infoTitle').textContent=d.title;document.getElementById('description').textContent=d.desc;document.getElementById('facts').innerHTML=d.facts.map(x=>'<li>'+x+'</li>').join('');document.getElementById('route').innerHTML=d.route.map((x,i)=>'<span>'+x+'</span>'+(i<d.route.length-1?'<b>←</b>':'')).join('');svg.querySelectorAll('.hot').forEach(g=>g.classList.toggle('selected',g.dataset.id===id));document.querySelectorAll('#quick button').forEach(b=>b.classList.toggle('active',b.dataset.id===id))}
+const labels={users:['🏠 خانه کاربران','دستگاه‌ها'],tower:['📶 دکل 4G / 5G','شبکه رادیویی'],core:['🔀 هسته شبکه','سوئیچ و روتر'],dc:['🏢 مرکز داده','سرورها و ابر'],ixp:['🌐 مرکز IXP','تبادل اینترنت'],sat:['🛰️ ماهواره','ایستگاه زمینی']};
+document.getElementById('quick').innerHTML=Object.entries(labels).map(([id,v])=>'<button data-id="'+id+'">'+v[0]+'<small>'+v[1]+'</small></button>').join('');
+document.getElementById('quick').addEventListener('click',e=>{let b=e.target.closest('button[data-id]');if(b)select(b.dataset.id)});
+svg.querySelectorAll('.hot').forEach(g=>g.addEventListener('click',()=>select(g.dataset.id)));
+function drawPackets(){packetLayer.innerHTML='';if(!traffic)return;const paths=[[[160,510],[355,390]],[[355,390],[590,490]],[[590,490],[850,480]],[[355,390],[710,210]],[[710,210],[850,480]]];for(let i=0;i<15;i++){let p=(tick*.007+i/15)%1,idx=Math.min(paths.length-1,Math.floor(p*paths.length)),u=p*paths.length-idx,a=paths[idx][0],b=paths[idx][1],x=a[0]+(b[0]-a[0])*u,y=a[1]+(b[1]-a[1])*u;let c=document.createElementNS('http://www.w3.org/2000/svg','circle');c.setAttribute('cx',x);c.setAttribute('cy',y);c.setAttribute('r',i%3===0?5:3.5);c.setAttribute('fill',i%3===0?'#fff8c9':'#e7ffff');c.setAttribute('class','packet');packetLayer.appendChild(c)}}
+function frame(){if(running){tick++;if(tick%35===0){packets+=Math.floor(Math.random()*5+2);document.getElementById('count').textContent=packets.toLocaleString('en-US');document.getElementById('latency').textContent=(19+Math.floor(Math.random()*12))+' ms'}drawPackets()}requestAnimationFrame(frame)}
+document.getElementById('toggle').onclick=()=>{running=!running;document.getElementById('toggle').textContent=running?'⏸ توقف شهر':'▶ ادامه شهر'};
+document.getElementById('traffic').onclick=()=>{traffic=!traffic;document.getElementById('traffic').textContent='بسته‌های داده: '+(traffic?'روشن':'خاموش');drawPackets()};
+document.getElementById('reset').onclick=()=>{tick=0;packets=1284;document.getElementById('count').textContent='1,284';document.getElementById('latency').textContent='24 ms';select('dc');drawPackets()};
+select('dc');drawPackets();frame();
+</script>
+</body></html>
