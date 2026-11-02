@@ -14,7 +14,7 @@ main{max-width:1500px;margin:auto;padding:14px;display:grid;grid-template-column
 .scene-wrap{background:#f7f1d9;border:1px solid #b8cbb6;border-radius:18px;overflow:hidden;box-shadow:0 12px 30px #234a3820}
 .scene-top{padding:11px 15px;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;background:#fffdf2;border-bottom:1px solid #d5dfc9}.scene-top strong{font-size:14px}.key{font-size:10px;color:#627c73;display:flex;gap:12px;flex-wrap:wrap}.key i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-left:4px}
 #city{width:100%;height:auto;display:block;background:#b9dcae;touch-action:manipulation}
-svg .hot{cursor:pointer;transition:filter .2s,opacity .2s}svg .hot:hover{filter:brightness(1.14) drop-shadow(0 0 5px #fff)}svg .hot.selected{filter:drop-shadow(0 0 7px #fff) drop-shadow(0 0 5px #16a6a0)}svg text{font-family:Tahoma,Arial,sans-serif;pointer-events:none} .packet{filter:drop-shadow(0 0 5px #fff)}
+svg .hot{cursor:pointer;transition:filter .2s,opacity .2s}svg .hot:hover{filter:brightness(1.14) drop-shadow(0 0 5px #fff)}svg .hot.selected{filter:drop-shadow(0 0 7px #fff) drop-shadow(0 0 5px #16a6a0)} .milad-waves{animation:wavePulse 2.6s ease-in-out infinite;transform-origin:465px 142px} @keyframes wavePulse{0%,100%{opacity:.35}50%{opacity:1}}svg text{font-family:Tahoma,Arial,sans-serif;pointer-events:none} .packet{filter:drop-shadow(0 0 5px #fff)}
 aside{display:flex;flex-direction:column;gap:11px}.panel{background:var(--panel);border:1px solid #c8d8c7;border-radius:16px;padding:13px;box-shadow:0 8px 20px #244b3812}.panel h2{font-size:14px;color:#287e78;margin:0 0 10px}.stats{display:grid;grid-template-columns:1fr 1fr;gap:7px}.stat{background:#edf4e9;border-radius:10px;padding:9px}.stat small{font-size:10px;color:#70847a;display:block}.stat b{font-size:19px;display:block;margin-top:4px;color:#23454a}.stat em{font-size:10px;color:#24977c;font-style:normal}.bar{height:5px;background:#d4e3d6;border-radius:9px;margin-top:7px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,#4aa9bb,#68b878);width:var(--w)}
 #infoTitle{font-size:16px;color:#24555a;margin:0 0 7px}.info p{font-size:11px;line-height:1.9;color:#5c7374;margin:6px 0}.info ul{padding-right:18px;margin:8px 0 0;color:#536c6c;font-size:10px;line-height:2}
 .route{display:flex;align-items:center;gap:4px;flex-wrap:wrap;margin-top:10px}.route span{font-size:9px;background:#e6f0e8;border:1px solid #c9ddce;border-radius:6px;padding:5px}.route b{font-size:10px;color:#279d9a}
@@ -67,7 +67,44 @@ footer{max-width:1500px;margin:auto;padding:0 15px 18px;font-size:10px;color:#61
 <rect x="85" y="548" width="22" height="15" rx="3" fill="#223c49"/><rect x="91" y="551" width="10" height="8" fill="#a4e7ee"/><path d="M96 548q-16 -16 -27 0M96 548q16 -16 27 0" fill="none" stroke="#fff" stroke-width="2"/>
 <text x="143" y="585" text-anchor="middle" font-size="18" font-weight="bold" fill="#20434a">خانه‌های کاربران</text><text x="143" y="602" text-anchor="middle" font-size="11" fill="#315b5a">گوشی • لپ‌تاپ • Wi-Fi</text>
 </g>
-<!-- cell tower -->
+
+<!-- Milad Tower landmark: 435m multi-purpose telecom and broadcast tower -->
+<g class="hot" data-id="milad">
+ <ellipse cx="465" cy="427" rx="83" ry="17" fill="#527e5b" opacity=".32"/>
+ <!-- four flared support legs and central shaft -->
+ <path d="M423 408L449 219H463L452 414Z" fill="#d8e2dc" stroke="#718b87" stroke-width="3"/>
+ <path d="M507 408L481 219H467L478 414Z" fill="#c5d7d2" stroke="#718b87" stroke-width="3"/>
+ <path d="M457 402L458 211H472L473 402Z" fill="#edf0e8" stroke="#809793" stroke-width="2"/>
+ <path d="M430 350L500 350M435 310L495 310M441 270L489 270" stroke="#93aaa4" stroke-width="3"/>
+ <!-- head pod, stacked technical / observation floors -->
+ <path d="M423 174Q465 153 507 174L501 222Q465 240 429 222Z" fill="#e8eee8" stroke="#657f7b" stroke-width="3"/>
+ <path d="M423 174L465 155 507 174 465 191Z" fill="#f7f5e8" stroke="#657f7b" stroke-width="3"/>
+ <path d="M427 184Q465 202 503 184M428 195Q465 213 502 195M429 207Q465 225 501 207M430 218Q465 235 500 218" fill="none" stroke="#6a9294" stroke-width="5"/>
+ <path d="M435 180L435 219M447 185L447 226M483 185L483 226M495 180L495 219" stroke="#9cc9cb" stroke-width="3"/>
+ <!-- antenna mast -->
+ <path d="M465 157V62" stroke="#637b78" stroke-width="7"/>
+ <path d="M465 153V58" stroke="#dce9df" stroke-width="3"/>
+ <g stroke="#637b78" stroke-width="3" fill="#e9f1e7">
+  <path d="M452 85H478L475 95H455Z"/><path d="M450 108H480L477 118H453Z"/><path d="M448 132H482L479 142H451Z"/>
+ </g>
+ <path d="M465 61V43" stroke="#647c78" stroke-width="3"/>
+ <!-- broadcast waves -->
+ <g class="milad-waves" fill="none" stroke="#f4b84d" stroke-width="3" opacity=".9">
+  <path d="M405 112Q370 142 405 172"/><path d="M390 96Q340 142 390 188"/>
+  <path d="M525 112Q560 142 525 172"/><path d="M540 96Q590 142 540 188"/>
+ </g>
+ <!-- link indicators -->
+ <path d="M465 230L465 270" stroke="#18a8bd" stroke-width="4" stroke-dasharray="5 5"/>
+ <text x="465" y="456" text-anchor="middle" font-size="19" font-weight="bold" fill="#173f48">برج میلاد</text>
+ <text x="465" y="473" text-anchor="middle" font-size="11" fill="#315b5a">مرکز پخش و ارتباطات شهری</text>
+</g>
+<!-- receiving endpoints connected to Milad Tower -->
+<g class="milad-endpoints" fill="none" stroke="#f2b94e" stroke-width="2.5" stroke-dasharray="5 7" opacity=".9">
+ <path d="M465 145Q300 95 143 500"/>
+ <path d="M465 145Q630 75 710 185"/>
+ <path d="M465 145Q770 105 850 290"/>
+</g>
+\n<!-- cell tower -->
 <g class="hot" data-id="tower">
 <ellipse cx="355" cy="395" rx="58" ry="16" fill="#527e5b" opacity=".3"/>
 <path d="M350 230L321 390H389L360 230Z" fill="#a9c1bc" stroke="#5c7d79" stroke-width="3"/><path d="M355 245L332 385M355 245L379 385M338 340H373M331 375H381" fill="none" stroke="#668b86" stroke-width="3"/>
@@ -119,7 +156,7 @@ footer{max-width:1500px;margin:auto;padding:0 15px 18px;font-size:10px;color:#61
 <g fill="none" stroke-linecap="round"><path d="M160 510L355 390L590 490L850 480" stroke="#16a6a0" stroke-width="5" opacity=".9"/><path d="M355 390L710 210L850 480" stroke="#f0b54c" stroke-width="3" stroke-dasharray="8 9" opacity=".9"/><path d="M590 490L710 210L1000 140" stroke="#3b9fd1" stroke-width="3" stroke-dasharray="5 10" opacity=".9"/></g>
 <g id="packets"></g>
 </svg>
-<div class="caption">روی ساختمان‌ها، دکل یا ایستگاه ماهواره‌ای بزن تا اطلاعات فنی آن بخش را ببینی. نقطه‌های نورانی، حرکت نمونه بسته‌های داده را در مسیر شبکه نمایش می‌دهند.</div></section>
+<div class="caption">روی برج میلاد، ساختمان‌ها، دکل یا ایستگاه ماهواره‌ای بزن تا عملکرد و اطلاعات فنی آن بخش را ببینی. نقطه‌های نورانی، حرکت نمونه بسته‌های داده را در مسیر شبکه نمایش می‌دهند.</div></section>
 <aside>
 <section class="panel"><h2>📡 تابلوی شهر در حال کار</h2><div class="stats">
 <div class="stat"><small>بسته‌های جابه‌جا شده</small><b id="count">1,284</b><em>● در حال عبور</em><div class="bar"><i style="--w:76%"></i></div></div>
@@ -131,7 +168,7 @@ footer{max-width:1500px;margin:auto;padding:0 15px 18px;font-size:10px;color:#61
 <section class="panel"><h2>🧭 انتخاب سریع مناطق شهر</h2><div class="buildings" id="quick"></div></section>
 </aside>
 </main>
-<footer>این شهر یک شبیه‌سازی آموزشی است؛ شمارنده بسته، تأخیر و ظرفیت به‌صورت نمایشی تولید می‌شوند و داده زنده اپراتور نیستند. در شبکه واقعی، مسیر و فناوری انتقال با توجه به اپراتور، منطقه و نوع سرویس تغییر می‌کند.</footer>
+<footer>این شهر یک شبیه‌سازی آموزشی است؛ شمارنده بسته، تأخیر، پوشش موج و ظرفیت به‌صورت نمایشی تولید می‌شوند و داده زنده برج میلاد یا اپراتورها نیستند. در شبکه واقعی، مسیر و فناوری انتقال با توجه به اپراتور، منطقه و نوع سرویس تغییر می‌کند.</footer>
 <script>
 const info={
 users:{title:'خانه‌های کاربران و دستگاه‌ها',desc:'گوشی، لپ‌تاپ و دستگاه‌های هوشمند نقطه شروع یا پایان ارتباط هستند. داده از طریق Wi-Fi، اترنت یا شبکه رادیویی موبایل وارد شبکه می‌شود.',facts:['Wi-Fi برای اتصال محلی بی‌سیم','اترنت برای اتصال سیمی','مودم یا کارت شبکه، سیگنال را ارسال و دریافت می‌کند'],route:['گوشی / لپ‌تاپ','Wi-Fi یا 5G','روتر دسترسی','اینترنت']},
@@ -139,16 +176,16 @@ tower:{title:'دکل و ایستگاه پایه 4G / 5G',desc:'آنتن‌های
 core:{title:'مرکز سوئیچ و هسته موبایل',desc:'هسته شبکه نشست کاربر، تحرک، احراز هویت و مسیریابی را مدیریت می‌کند. روترها بسته‌ها را به مقصد مناسب می‌فرستند.',facts:['در 4G معماری EPC و در 5G هسته 5GC','روترهای IP و تجهیزات انتقال','کنترل دسترسی و مدیریت نشست'],route:['سایت رادیویی','شبکه انتقال','هسته موبایل','شبکه مقصد']},
 dc:{title:'مرکز داده و رایانش ابری',desc:'ساختمان سرورها، ذخیره‌سازها و تجهیزات شبکه است. وب‌سایت‌ها، برنامه‌ها و سرویس‌های ابری در اینجا یا زیرساخت‌های مشابه اجرا می‌شوند.',facts:['سرورهای پردازشی و ذخیره‌سازی','روتر مرزی و اتصال به شبکه‌ها','برق پشتیبان، سرمایش و مسیر افزونه'],route:['کاربر','دکل','هسته شبکه','مرکز داده']},
 ixp:{title:'نقطه تبادل اینترنت (IXP)',desc:'شبکه‌های مستقل در این نقطه ترافیک را مستقیم با هم مبادله می‌کنند. پروتکل BGP مسیرهای بین شبکه‌ها را اعلام می‌کند.',facts:['سوئیچ مرکزی و روترهای peering','تبادل مسیر با BGP','کاهش مسیرهای غیرضروری در تبادل محلی'],route:['شبکه A','روتر مرزی','IXP','شبکه B']},
-sat:{title:'ایستگاه زمینی و ماهواره',desc:'آنتن زمینی سیگنال را به ماهواره می‌فرستد و ماهواره آن را به دروازه زمینی دیگر منتقل می‌کند. این فناوری می‌تواند دسترسی مناطق دوردست یا مسیر پشتیبان را فراهم کند.',facts:['آنتن بشقابی و مودم ماهواره‌ای','تأخیر به مدار و مسیر رفت‌وبرگشت وابسته است','یکی از گزینه‌های دسترسی یا بک‌هاول'],route:['ترمینال زمینی','uplink','ماهواره','دروازه زمینی']}
+milad:{title:'برج میلاد تهران | مرکز مخابرات و پخش',desc:'برج میلاد یک برج چندمنظوره با ارتفاع کلی حدود ۴۳۵ متر است. دکل آنتن بالای برج برای زیرساخت پخش رادیو و تلویزیون و آنتن‌های مخابراتی به‌کار می‌رود. این شبیه‌سازی، مسیر انتشار سیگنال و کاربردهای اعلام‌شده برج را به‌صورت آموزشی نشان می‌دهد؛ نه وضعیت زنده تجهیزات برج.',facts:['ارتفاع کلی حدود ۴۳۵ متر؛ سازه اصلی تا حدود ۳۱۵ متر و دکل آنتن حدود ۱۲۰ متر','پخش رادیو و تلویزیون و زیرساخت تلویزیون دیجیتال','تسهیل ارتباطات بی‌سیم و پوشش مخابراتی','کاربردهای گزارش‌شده: هواشناسی و پایش/کنترل ترافیک','سرِ برج دارای طبقات فنی، مخابراتی و فضاهای بازدید است'],route:['مرکز پخش','فرستنده و آنتن','امواج رادیویی','گیرنده‌های شهری']},\nsat:{title:'ایستگاه زمینی و ماهواره',desc:'آنتن زمینی سیگنال را به ماهواره می‌فرستد و ماهواره آن را به دروازه زمینی دیگر منتقل می‌کند. این فناوری می‌تواند دسترسی مناطق دوردست یا مسیر پشتیبان را فراهم کند.',facts:['آنتن بشقابی و مودم ماهواره‌ای','تأخیر به مدار و مسیر رفت‌وبرگشت وابسته است','یکی از گزینه‌های دسترسی یا بک‌هاول'],route:['ترمینال زمینی','uplink','ماهواره','دروازه زمینی']}
 };
 let selected='dc',running=true,traffic=true,tick=0,packets=1284;
 const svg=document.getElementById('city'),packetLayer=document.getElementById('packets');
 function select(id){if(!info[id])return;selected=id;let d=info[id];document.getElementById('infoTitle').textContent=d.title;document.getElementById('description').textContent=d.desc;document.getElementById('facts').innerHTML=d.facts.map(x=>'<li>'+x+'</li>').join('');document.getElementById('route').innerHTML=d.route.map((x,i)=>'<span>'+x+'</span>'+(i<d.route.length-1?'<b>←</b>':'')).join('');svg.querySelectorAll('.hot').forEach(g=>g.classList.toggle('selected',g.dataset.id===id));document.querySelectorAll('#quick button').forEach(b=>b.classList.toggle('active',b.dataset.id===id))}
-const labels={users:['🏠 خانه کاربران','دستگاه‌ها'],tower:['📶 دکل 4G / 5G','شبکه رادیویی'],core:['🔀 هسته شبکه','سوئیچ و روتر'],dc:['🏢 مرکز داده','سرورها و ابر'],ixp:['🌐 مرکز IXP','تبادل اینترنت'],sat:['🛰️ ماهواره','ایستگاه زمینی']};
+const labels={milad:['🗼 برج میلاد تهران','پخش رادیو، TV و مخابرات'],users:['🏠 خانه کاربران','دستگاه‌ها'],tower:['📶 دکل 4G / 5G','شبکه رادیویی'],core:['🔀 هسته شبکه','سوئیچ و روتر'],dc:['🏢 مرکز داده','سرورها و ابر'],ixp:['🌐 مرکز IXP','تبادل اینترنت'],sat:['🛰️ ماهواره','ایستگاه زمینی']};
 document.getElementById('quick').innerHTML=Object.entries(labels).map(([id,v])=>'<button data-id="'+id+'">'+v[0]+'<small>'+v[1]+'</small></button>').join('');
 document.getElementById('quick').addEventListener('click',e=>{let b=e.target.closest('button[data-id]');if(b)select(b.dataset.id)});
 svg.querySelectorAll('.hot').forEach(g=>g.addEventListener('click',()=>select(g.dataset.id)));
-function drawPackets(){packetLayer.innerHTML='';if(!traffic)return;const paths=[[[160,510],[355,390]],[[355,390],[590,490]],[[590,490],[850,480]],[[355,390],[710,210]],[[710,210],[850,480]]];for(let i=0;i<15;i++){let p=(tick*.007+i/15)%1,idx=Math.min(paths.length-1,Math.floor(p*paths.length)),u=p*paths.length-idx,a=paths[idx][0],b=paths[idx][1],x=a[0]+(b[0]-a[0])*u,y=a[1]+(b[1]-a[1])*u;let c=document.createElementNS('http://www.w3.org/2000/svg','circle');c.setAttribute('cx',x);c.setAttribute('cy',y);c.setAttribute('r',i%3===0?5:3.5);c.setAttribute('fill',i%3===0?'#fff8c9':'#e7ffff');c.setAttribute('class','packet');packetLayer.appendChild(c)}}
+function drawPackets(){packetLayer.innerHTML='';if(!traffic)return;const paths=[[[160,510],[355,390]],[[355,390],[590,490]],[[590,490],[850,480]],[[355,390],[710,210]],[[710,210],[850,480]],[[465,145],[143,500]],[[465,145],[710,185]],[[465,145],[850,290]]];for(let i=0;i<15;i++){let p=(tick*.007+i/15)%1,idx=Math.min(paths.length-1,Math.floor(p*paths.length)),u=p*paths.length-idx,a=paths[idx][0],b=paths[idx][1],x=a[0]+(b[0]-a[0])*u,y=a[1]+(b[1]-a[1])*u;let c=document.createElementNS('http://www.w3.org/2000/svg','circle');c.setAttribute('cx',x);c.setAttribute('cy',y);c.setAttribute('r',i%3===0?5:3.5);c.setAttribute('fill',i%3===0?'#fff8c9':'#e7ffff');c.setAttribute('class','packet');packetLayer.appendChild(c)}}
 function frame(){if(running){tick++;if(tick%35===0){packets+=Math.floor(Math.random()*5+2);document.getElementById('count').textContent=packets.toLocaleString('en-US');document.getElementById('latency').textContent=(19+Math.floor(Math.random()*12))+' ms'}drawPackets()}requestAnimationFrame(frame)}
 document.getElementById('toggle').onclick=()=>{running=!running;document.getElementById('toggle').textContent=running?'⏸ توقف شهر':'▶ ادامه شهر'};
 document.getElementById('traffic').onclick=()=>{traffic=!traffic;document.getElementById('traffic').textContent='بسته‌های داده: '+(traffic?'روشن':'خاموش');drawPackets()};
